@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="styles/main.css">
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    
+
   </style>
 </head>
+
 <body>
-  <div class="card">
-    <span><img src="images/image-equilibrium.jpg" alt="Equilibrium"></span>
-    <h2>Equilibrium #3429</h2>
-    <p>Our Equilibrium collection promotes balance and calm.</p>
-    <span><img src="images/icon-ethereum.svg" alt="icon-ethereum"></span>0.041 ETH
-    <span><img src="images/icon-clock.svg" alt="icon-clock"></span>3 days left
-    <hr>
-    Creation of Jules Wyvern
+  <div class="flex-container">
+    <div class="box-1">
+      <img id="eq-icon" src="images/image-equilibrium.jpg" alt="Equilibrium">
+      <h2>Equilibrium #3429</h2>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <span class="eth"><img src="images/icon-ethereum.svg" alt="icon-ethereum">0.041 ETH</span>
+      <span class="clock"><img src="images/icon-clock.svg" alt="icon-clock">3 days left</span>
+      <hr>
+      <img id="avatar" src="images/image-avatar.png" alt="imge-avatar">Creation of <b>Jules Wyvern</b>
+    </div>
   </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/elams18">Elamathi S</a>.
   </div>
 </body>
+
 </html>
