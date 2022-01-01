@@ -1,17 +1,14 @@
-::root{
-    --clr-soft-blue: hsl(215, 51%, 70%);
-    --clr-cyan: hsl(178, 100%, 50%);
-    --clr-main-bg: hsl(217, 54%, 11%);
-    --clr-card-bg: hsl(216, 50%, 16%);
-    --clr-line: hsl(215, 32%, 27%);
-    --white: hsl(0, 0%, 100%);
-}
 p{
     font-size: 18px;
-    justify-content: center;
-    align-items: center;
+    align-content:left;
 }
-
+html{
+    display: flex;
+    justify-content: center;
+}
+span #avatar{
+    padding-top: 1%;
+}
 .attribution { 
     padding-top: 5em;
     font-size: 11px; 
@@ -45,7 +42,7 @@ html{
     display: flex;
     text-align: center;
     height: 35em;
-    width: 30em;
+    width: 25em;
     background-color: hsl(216, 50%, 16%);
     border-radius: 1em;
     padding-top: 5%;
