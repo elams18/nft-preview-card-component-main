@@ -1,68 +1,113 @@
+:root {
+    --cyan: hsl(178, 100%, 50%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --font-size: 18px;
+    font-family: 'Outfit Thin';
+    font-weight: 400;
+    margin: 2px 1em 0 auto;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-bg);
+    color: var(--soft-blue);
+}
+.attribution {
+    position: absolute;
+    top:100%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    font-weight: 400;
+    color: var(--white);
+}
+
+body{
+    position: relative;
+    min-height: 100%;
+    width: 375px;
+    margin: 0 auto;
+}
+
+span{
+    color: var(--white);
+}
+
+h1{
+    justify-content: left;
+    font-weight: 600;
+    color: var(--white);
+    padding-left: 5%;
+    font-size: var(--font-size);
+}
+
 p{
-    font-size: 18px;
-    align-content:left;
+    font-weight: 300;
+    color: var(--soft-blue);
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1rem;
 }
-html{
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nft-card{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding: 4%;
+    align-items: center;
+    background-color: var(--card-bg);
+    border-radius: 0.5em;
 }
-span #avatar{
-    padding-top: 1%;
+
+.footer{
+    display: flex;
+    padding: 3%;
+    column-gap: 10px;
 }
-.attribution { 
-    padding-top: 5em;
-    font-size: 11px; 
-    text-align: center; 
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+
+.card{
+    position: relative;
+    min-height: 50%; 
+    min-width: 50%;   
 }
 
 .eth{
-    color: hsl(178, 100%, 50%);
+    color: var(--cyan);
+    font-size: 1rem;
 }
 
 .clock{
-    text-align: right;
+    font-size: 1rem;
 }
 
-
-
-hr{
-    background-color: hsl(215, 32%, 27%);
-}
-
-html{
-    background-color: hsl(217, 54%, 11%);
-    font-family: 'Output Thin';
-    color: hsl(215, 51%, 70%);
-}
-
-.flex-container{
-    display: flex;
+.image{
     text-align: center;
-    height: 35em;
-    width: 25em;
-    background-color: hsl(216, 50%, 16%);
-    border-radius: 1em;
-    padding-top: 5%;
 }
 
-.box-1{
-    flex: 1;
-}
-
-.img{
-    max-width: 100%;
-    max-height: 100%;
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3%;
 }
 
 #eq-icon{
-    height: 20em;
-    width: 20em;
+    max-width: 15rem;
+    max-height: 15rem;
 }
 
-#avatar{
-    height: 1.5em;
-    width: 1.5em;
+#avatar-icon{
+    max-width: 1.5625rem;
+    max-height: 1.5625rem;
 }
